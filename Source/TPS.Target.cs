@@ -8,7 +8,6 @@ public class TPSTarget : TargetRules
 {
     public TPSTarget(TargetInfo Target) : base(Target)
     {
-        Console.WriteLine("TPS Game Target ----------------->");
         Type = TargetType.Game;
         DefaultBuildSettings = BuildSettingsVersion.V2;
         ExtraModuleNames.Add("TPS");

@@ -8,7 +8,8 @@ public class TPSEditorTarget : TargetRules
 {
     public TPSEditorTarget(TargetInfo Target) : base(Target)
     {
-        Console.WriteLine("TPS Editor Target ----------------->");
+        bOverrideBuildEnvironment = true;
+
         Type = TargetType.Editor;
         DefaultBuildSettings = BuildSettingsVersion.V2;
         ExtraModuleNames.Add("TPS");
