@@ -8,6 +8,8 @@ public class TPSTarget : TargetRules
 {
     public TPSTarget(TargetInfo Target) : base(Target)
     {
+        bOverrideBuildEnvironment = true;
+
         Type = TargetType.Game;
         DefaultBuildSettings = BuildSettingsVersion.V2;
         ExtraModuleNames.Add("TPS");

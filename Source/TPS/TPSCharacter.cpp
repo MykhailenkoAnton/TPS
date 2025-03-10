@@ -1,6 +1,7 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "TPSCharacter.h"
+#include "Engine/World.h"
 
 #if MY_VR_MACRO
 #include "HeadMountedDisplayFunctionLibrary.h"

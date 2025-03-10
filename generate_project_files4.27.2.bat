@@ -1,6 +1,5 @@
-set EnginePath=C:\Program Files\Epic Games\UE_4.27
-set UBTRelativePath=Engine\Binaries\DotNET\UnrealBuildTool.exe
-set VersionSelector=C:\Program Files (x86)\Epic Games\Launcher\Engine\Binaries\Win64\UnrealVersionSelector.exe
-set ProjectName=TPS.uproject
+@echo off
+call "%~dp0devops\config.bat"
 
-devops/generate_project_files.bat "%EnginePath%" "%UBTRelativePath%" "%VersionSelector%" "%ProjectName%"
+devops\misc\generate_project_files.bat "%EnginePath_4.27.2%" "%UBTRelativePathUE4Binary%" "%VersionSelectorUE4Binary%" "%ProjectName%"
+pause

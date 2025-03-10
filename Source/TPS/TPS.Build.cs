@@ -20,8 +20,9 @@ public class TPS : ModuleRules
 
         if (Target.Type == TargetType.Editor)
         {
-            PublicDependencyModuleNames.Add("HeadMountedDisplay");
-            PublicDefinitions.Add("MY_VR_MACRO=1");
+            // PublicDependencyModuleNames.Add("XRBase"); // HeadMountedDisplay was before 5.3 version. Now XRBase. Enable plugin for use
+            // this.
+            PublicDefinitions.Add("MY_VR_MACRO=0");  // no need for // for example
         }
         else if (Target.Type == TargetType.Game)
         {
